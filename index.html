@@ -509,7 +509,7 @@
       </section>
 
       <!-- faq section -->
-      <section class="container mx-auto my-36 px-4 md:p-0">
+      <section class="container mx-auto mt-36 mb-[25rem] px-4 md:p-0">
         <h2 class="adlam-font text-3xl mb-12 text-center">
           Frequently Asked Questions
         </h2>
@@ -600,11 +600,43 @@
         </div>
       </section>
     </main>
-    <footer class="px-4 pb-14 lg:p-28 bg-[#FFDC2680]">
-      <!-- footer content -->
+    <footer class="pt-[21rem] px-4 pb-14 lg:px-28 bg-[#FFDC2680] relative">
+      <!-- floating section -->
       <div
-        class="mt-32 flex flex-col gap-9 lg:flex-row justify-between lg:items-end"
+        class="container w-[calc(100%-32px)] lg:w-full absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col lg:gap-24 md:flex-row items-center justify-between bg-secondary p-6 rounded-lg"
       >
+        <!-- Image -->
+        <img
+          src="./c1-assets/cute-pet-mid.png"
+          alt="Dog"
+          class="w-1/2 md:w-1/3 object-cover rounded-lg"
+        />
+        <!-- Text & Form -->
+        <div class="p-6 w-full">
+          <h2 class="text-xl md:text-3xl adlam-font text-center md:text-left">
+            Get Pawsome News!
+          </h2>
+          <p class="my-3 lg:my-5 text-center md:text-left">
+            Exclusive training tips, tricks, product deals, and more.
+          </p>
+
+          <form
+            class="flex flex-col justify-center items-center lg:items-start space-y-3 lg:space-y-8"
+          >
+            <input
+              type="email"
+              placeholder="Enter email..."
+              class="input w-full"
+            />
+            <button class="btn bg-accent capitalize font-semibold">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- footer content -->
+      <div class="flex flex-col gap-9 lg:flex-row justify-between lg:items-end">
         <!-- left -->
         <div class="space-y-5">
           <img src="./c1-assets/logo-footer.png" alt="" class="inline mr-3" />

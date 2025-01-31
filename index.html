@@ -17,6 +17,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              secondary: "#FFF9F4",
+              accent: "#FFDC26",
             },
           },
         },
@@ -31,6 +33,12 @@
       rel="stylesheet"
     />
 
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/847464fa6f.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- font style -->
     <style>
       .sora-font {
@@ -44,5 +52,69 @@
       }
     </style>
   </head>
-  <body class="sora-font"></body>
+  <body class="sora-font">
+    <header class="">
+      <!-- nav -->
+      <div
+        class="bg-[#FFF9F4] flex items-center justify-between p-4 border-b border-black md:border-none lg:px-28 lg:py-5"
+      >
+        <!-- start-nav -->
+        <div class="flex items-center gap-3">
+          <img src="./c1-assets/logo-header.png" alt="" />
+          <p class="text-xl hidden md:block">
+            Browse<span class="text-accent">4</span>Pets
+          </p>
+        </div>
+        <!-- center-nav -->
+        <div class="hidden md:block">
+          <ul class="flex gap-7">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <!-- end-nav -->
+        <div class="space-x-3 hidden md:block">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button
+            class="px-7 py-2 bg-white border border-accent rounded-lg text-sm"
+          >
+            Login
+          </button>
+          <button class="px-7 py-2 bg-accent rounded-lg text-sm">
+            Register
+          </button>
+        </div>
+        <!-- menu -->
+        <div class="w-7 md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <!-- banner -->
+      <div class="container mt-16 mx-auto relative">
+        <!-- text contents -->
+        <div class="space-y-5 pl-4 md:p-0">
+          <h1 class="adlam-font text-3xl md:text-5xl">
+            Pamper Your Pet, <br />
+            Because They Deserve <br />
+            the Best
+          </h1>
+          <p class="w-4/5 md:w-1/2">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="px-7 py-2 bg-accent rounded-lg text-sm">
+            Find a pet
+          </button>
+        </div>
+        <!-- img -->
+        <img
+          src="./c1-assets/cat-big.png"
+          alt=""
+          class="absolute -z-10 top-2/3 md:left-0 md:top-0"
+        />
+      </div>
+    </header>
+  </body>
 </html>

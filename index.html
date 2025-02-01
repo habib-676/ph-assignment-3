@@ -39,7 +39,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- font style -->
+    <!-- style -->
     <style>
       .sora-font {
         font-family: "Sora", serif;
@@ -49,6 +49,42 @@
       .adlam-font {
         font-family: "ADLaM Display", serif;
         font-style: normal;
+      }
+      /* animation */
+      @keyframes motion {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        25% {
+          transform: translate(100px, -50px) rotate(15deg);
+        }
+        50% {
+          transform: translate(200px, 0) rotate(-10deg);
+        }
+        75% {
+          transform: translate(100px, 30px) rotate(10deg);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+      }
+
+      @keyframes wing-flap {
+        0%,
+        100% {
+          transform: scaleX(1);
+        }
+        50% {
+          transform: scaleX(0.5);
+        }
+      }
+
+      .butterfly {
+        animation: motion 5s infinite linear;
+      }
+
+      .butterfly img {
+        animation: wing-flap 0.3s infinite alternate ease-in-out;
       }
     </style>
   </head>
@@ -92,7 +128,11 @@
         </div>
       </div>
       <!-- banner -->
-      <div class="container mt-16 mx-auto relative">
+      <div class="container mt-12 mx-auto relative">
+        <!-- animation -->
+        <div class="butterfly w-16 h-16">
+          <img src="./c1-assets/butterfly-vector.png" class="w-full h-full" />
+        </div>
         <!-- text contents -->
         <div class="space-y-5 pl-4 md:p-0">
           <h1 class="adlam-font text-3xl md:text-5xl">
